@@ -58,6 +58,7 @@
 
 	app.start();
 
+<<<<<<< HEAD
 	var mainphp = ['<?php',  "\n",
         "namespace {author}\\{plugin};", "\n",
         'use pocketmine\command\CommandSender;', "\n",
@@ -167,3 +168,6 @@
 	}
 
 }());
+=======
+})();
+>>>>>>> 4233015e949d0e34230c7d0408331758226db35c

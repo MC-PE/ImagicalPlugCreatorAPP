@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+>>>>>>> 4233015e949d0e34230c7d0408331758226db35c
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|AnyCPU">
@@ -51,21 +55,35 @@
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+<<<<<<< HEAD
     <DefaultLanguage>en</DefaultLanguage>
     <PackageCertificateKeyFile>ImagicalPlugCreator_TemporaryKey.pfx</PackageCertificateKeyFile>
+=======
+    <DefaultLanguage>fr-FR</DefaultLanguage>
+    
+    <PackageCertificateKeyFile>ImagicalPlugCreator_TemporaryKey.pfx</PackageCertificateKeyFile>
+    
+>>>>>>> 4233015e949d0e34230c7d0408331758226db35c
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+<<<<<<< HEAD
     <Content Include="images\BadgeLogo.scale-400.png" />
+=======
+>>>>>>> 4233015e949d0e34230c7d0408331758226db35c
     <Content Include="index.html" />
     <Content Include="images\LockScreenLogo.scale-200.png" />
     <Content Include="images\SplashScreen.scale-200.png" />
     <Content Include="images\Square150x150Logo.scale-200.png" />
     <Content Include="images\Square44x44Logo.scale-200.png" />
     <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+<<<<<<< HEAD
     <Content Include="images\Store50x50Logo.png" />
+=======
+    <Content Include="images\StoreLogo.png" />
+>>>>>>> 4233015e949d0e34230c7d0408331758226db35c
     <Content Include="images\Wide310x150Logo.scale-200.png" />
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />
@@ -74,7 +92,13 @@
     <Content Include="lib\winjs-4.0.1\css\ui-light.css" />
     <Content Include="lib\winjs-4.0.1\css\ui-dark.css" />
     <Content Include="lib\winjs-4.0.1\fonts\Symbols.ttf" />
+<<<<<<< HEAD
     <None Include="ImagicalPlugCreator_TemporaryKey.pfx" />
+=======
+    
+    <None Include="ImagicalPlugCreator_TemporaryKey.pfx" />
+    
+>>>>>>> 4233015e949d0e34230c7d0408331758226db35c
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <!-- To modify your build process, add your task inside one of the targets below then uncomment
