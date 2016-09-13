@@ -58,7 +58,6 @@
 
 	app.start();
 
-<<<<<<< HEAD
 	var mainphp = ['<?php',  "\n",
         "namespace {author}\\{plugin};", "\n",
         'use pocketmine\command\CommandSender;', "\n",
@@ -146,8 +145,8 @@
 	        writer.add("plugin.yml", new zip.TextReader(pluginyml.replace("{author}", author).replace("{plugin}", name)));
 	        writer.add("src\\" + author + "\\" + name + "\\Main.php", new zip.TextReader(mainphp.replace("{author}", author).replace("{plugin}", name)));
 
-	        for(i = 0; < i <= tasks; i++) {
-
+	        for(i = 0; i <= tasks; i++) {
+	            writer.add("src\\" + author + "\\" + name + "\\Main.php", new zip.TextReader(mainphp.replace("{author}", author).replace("{plugin}", name).replace("{id}", i));
 	        }
 
 	        // use a TextReader to read the String to add
@@ -168,6 +167,3 @@
 	}
 
 }());
-=======
-})();
->>>>>>> 4233015e949d0e34230c7d0408331758226db35c
