@@ -1,2 +1,17 @@
 ﻿body {
 }
+input, button {
+    background: linear-gradient(left, #e2dcdc, light-gray);
+    background: -webkit-linear-gradient(left, #e2dcdc, light-gray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e2dcdc, light-gray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e2dcdc, light-gray); /* For Firefox 3.6 to 15 */
+    padding: 4px;
+    border: 2px solid lightgray;
+    border-radius: 7.5px;
+}
+h1 {
+    font-size: 20px;
+}
+button {
+    cursor: pointer;
+}
