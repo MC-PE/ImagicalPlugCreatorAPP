@@ -9,21 +9,29 @@
     <script src="lib/winjs-4.0.1/js/ui.js"></script>
     <link href="css/default.css" rel="stylesheet" />
     <script src="js/main.js"></script>
+    <link rel="icon" href="images/IPC.ico" />
 </head>
 <body class="win-type-body">
     <center>
         <nav id="nav"><center><h1>ImagicalPlugCreator, Create PocketMine plugin base ! By <a href="https://twitter.com/Ad5001P4F">@Ad5001P4F</a></h1></center></nav><hr />
         <h1>Creating plugin <span id="plname">New plugin</span> by <span id="plauth">Author</span></h1>
-        <label>Plugin name: <input type="text" id="name" name="name" placeholder="Plugin name" /></label><br />
-        <label>Plugin author: <input type="text" id="author" name="author" placeholder="Plugin author" /></label><br />
-        <label>Config: <input type="checkbox" id="config" name="config" /></label><br />
-        <label>Events: <input type="checkbox" id="events" name="events" /></label><br />
-        <label>Task number: <input type="number" id="tasks" name="tasks" placeholder="0" /></label><br />
-        <label>Dummy file number: <input type="number" id="number" name="number" placeholder="0" /></label><br />
-        <button id="submit">Create plugin</button><br />
-        <p id="status"></p>
+        <table>
+            <tr><td>Plugin name: </td><td><input type="text" id="name" name="name" placeholder="Plugin name" pattern="^[a-zA-Z0-9-_.]{1,}$" /></td></tr>
+            <tr><td>Plugin author: </td><td><input type="text" id="author" name="author" placeholder="Plugin author" pattern="^[a-zA-Z0-9-_.]{1,}$" /></td></tr>
+            <tr><td>Config: </td><td><input type="checkbox" id="config" name="config" /></td></tr>
+            <tr><td>Events: </td><td><input type="checkbox" id="events" name="events" /></td></tr>
+            <tr><td>Task number: </td><td><input type="number" id="tasks" name="tasks" placeholder="0" pattern="^[0-9]{1,}$" /></td></tr>
+            <tr><td>Dummy file number: </td><td><input type="number" id="dummies" name="dummies" placeholder="0" pattern="^[0-9]{1,}$" /></td></tr>
+            <tr><td>Directory: </td><td><div id="choosed" style="opacity: 0;display: none;"></div><p id="choosedP">Picked folder: none</p><button id="chooseFolder">Select pocketmine plugins folder</button></td></tr>
+        </table>
+        <br />
+        <center><button id="submit">Create plugin</button></center><br />
+        <table><tr><td><p id="status"></p></td><td><progress id="loading" style="opacity: 0;" class="win-ring win-large" /></td></tr></table>
     </center>
 
-    <a id="dl" style="display: none;"></a>
+    <p id="status"></p>
+
+    <script id="script"></script>
+
 </body>
 </html>

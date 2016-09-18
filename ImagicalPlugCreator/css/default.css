@@ -1,17 +1,78 @@
-﻿body {
+﻿@import 'https://fonts.googleapis.com/css?family=Roboto';
+input {
+    padding: 9px;
+    border: hidden;
+    border-bottom: 1px solid red;
+    border-radius: 5px;
 }
-input, button {
-    background: linear-gradient(left, #e2dcdc, light-gray);
-    background: -webkit-linear-gradient(left, #e2dcdc, light-gray); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #e2dcdc, light-gray); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #e2dcdc, light-gray); /* For Firefox 3.6 to 15 */
-    padding: 4px;
-    border: 2px solid lightgray;
-    border-radius: 7.5px;
+body {
+    overflow: auto;
 }
+input:valid {
+    padding: 9px;
+    border: hidden;
+    border-bottom: 1px solid green;
+    border-radius: 5px;
+}
+
+
 h1 {
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 button {
     cursor: pointer;
+    border: 1px solid light-gray;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 9px;
+}
+button:focus {
+    font-size: 14.5px;
+
+}
+
+
+input[type="checkbox"]::-ms-check {
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+input[type="checkbox"]:checked::-ms-check {
+    content: "v";
+    border: 1px solid lime;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+input[type='text']:focus, input[type='number']:focus, input[type='url']:focus, input[type='email']:focus {
+    border-bottom: 1.5px solid red;
+}
+
+
+input[type='text']:focus:valid, input[type='number']:focus:valid, input[type='url']:focus:valid, input[type='email']:focus:valid {
+    border-bottom: 1.5px solid lime;
+}
+
+
+input[type="text"]::-ms-value {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+
+input[type="text"]::-ms-clear {
+    background-position-x: 50px;
 }
